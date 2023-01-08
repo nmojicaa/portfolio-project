@@ -125,6 +125,43 @@ p {
   font-size: 28px;
 }
 
+.logo {
+  max-height: 150px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+nav {
+  padding: 10px 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 10px;
+}
+
+nav ul {
+  padding-top: 20px;
+  line-height: 60px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #272142;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--branding-color);
+  transition: all 100ms ease-in-out;
+}
+
+nav a {
+  font-size: 14px;
+}
+
 @media (max-width: 900px) {
   .project-description {
     padding: 0;
