@@ -197,8 +197,39 @@
         </section>
       </div>  
       <section>
-        <h4 class="text-center">What's to work with me:</h4>
-        <p class="text-center">insert quote / tesimonial</p>
+        <h4 class="text-center">What My Colleagues Have to Say:</h4>
+      </br>
+        <!-- Slideshow container -->
+          <div class="slideshow-container">
+
+            <!-- Full-width slides/quotes -->
+            <div class="mySlides">
+              <q>Natalia's excellent communication and open approach to collaboration makes her nothing less than the perfect teammate for any project. There is no one I'd rather strategize with!</q>
+              <p class="author">- Evan Childs, SEO Manager</p>
+            </div>
+
+            <div class="mySlides">
+              <q>lorem ipsum</q>
+              <p class="author">- Person, Title</p>
+            </div>
+
+            <div class="mySlides">
+              <q>lorem ipsum</q>
+              <p class="author">- Person, Title</p>
+            </div>
+
+            <!-- Next/prev buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+
+          <!-- Dots/bullets/indicators -->
+          <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+
       </section>
       
       <footer class="mt-5">
@@ -213,7 +244,7 @@
           </div>
         </div>
         <div class="d-flex justify-content-center">
-          <a href="mailto:natalia@mail.como" class="email-link mb-4">natalia@mail.com</a>
+          <a href="mailto:natalia@mail.como" class="email-link mb-4">nataliamoj13@gmail.com</a>
         </div>
         <div class="social-links d-flex justify-content-center">
           <a href="https://www.instagram.com/codewithnatalia/" target="_blank" title="Instagram Profile">
@@ -231,7 +262,7 @@
           </a>
       </div>
       <p class="text-center mt-5">
-        This project was coded by Natalia Mojica, and it is 
+        This portfolio was coded by Natalia Mojica, and it is 
         <a href="https://github.com/nmojicaa/portfolio-project" target="_blank" title="Project Repository">
         open sourced
         </a> on GitHub ⭐️
@@ -239,4 +270,33 @@
       </footer>  
     </div>
   </body>
+
+  <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+  </script>
 </html>
