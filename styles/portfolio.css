@@ -62,6 +62,11 @@ p {
   height: auto;
 }
 
+.img-fluid.headshot {
+  border-radius: 6px;
+  margin: 60px;
+}
+
 .content-container {
   padding: 60px 20px;
 }
@@ -135,7 +140,11 @@ p {
 .grid-4 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 20px;
+}
+
+.box {
+  background-color: white;
 }
 
 .btn-branding {
@@ -164,6 +173,11 @@ p {
   max-height: 150px;
   margin-left: 0;
   padding-left: 0;
+}
+
+.strategy-work-section {
+  background-color: #f8f8f8;
+  border-radius: 6px;
 }
 
 nav {
@@ -250,6 +264,10 @@ q {
   color: black;
 }
 
+section .img {
+  justify-content: center;
+}
+
 footer {
   margin: 60px 0;
 }
@@ -321,6 +339,8 @@ footer .social-links a:hover {
   img {
     border-radius: 4px;
     padding: 15px 15px;
+    max-width: 100%;
+    height: auto;
   }
 
   .grid-4,
