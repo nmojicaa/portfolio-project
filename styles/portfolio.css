@@ -148,6 +148,15 @@ p {
   margin: 10px;
 }
 
+.industry-icons fa-solid {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.fa-gamepad {
+  text-align: center;
+}
+
 .box {
   background-color: white;
 }
