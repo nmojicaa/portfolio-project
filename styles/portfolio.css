@@ -149,12 +149,11 @@ p {
 }
 
 .industry-icons fa-solid {
-  width: 200px;
-  margin: 0 auto;
+  width: 225px;
 }
 
-.fa-gamepad {
-  text-align: center;
+.strategy-box p {
+  font-size: 20px;
 }
 
 .box {
