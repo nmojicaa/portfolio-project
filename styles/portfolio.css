@@ -152,8 +152,13 @@ p {
   width: 225px;
 }
 
+.industry-icons p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
 .strategy-box p {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .box {
